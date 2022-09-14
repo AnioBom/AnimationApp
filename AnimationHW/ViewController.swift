@@ -6,14 +6,21 @@
 //
 
 import UIKit
+import SpringAnimation
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var coreAnimationView: SpringView!
+    @IBOutlet var descriptionAnimationLabel: SpringLabel!
+    
+    let animation = Animation.getAniamtionType()
+    
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBAction func runAnimation(_ sender: Any) {
+        
+        
+        
     }
-
-
+    
 }
 
