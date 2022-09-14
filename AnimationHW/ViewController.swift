@@ -11,13 +11,19 @@ import SpringAnimation
 class ViewController: UIViewController {
     
     @IBOutlet var coreAnimationView: SpringView!
-    @IBOutlet var descriptionAnimationLabel: SpringLabel!
+    @IBOutlet var descripeAnimationLabel: SpringLabel!
+    @IBOutlet var textButton: UIButton!
     
     let animation = Animation.getAniamtionType()
     
+    // let animation: [Animation] = []
+    
+    
 
-    @IBAction func runAnimation(_ sender: Any) {
+    @IBAction func buttonPressed(_ sender: UIButton) {
         
+        descripeAnimationLabel.text = "\(animation)"
+        sender.setTitle("\(animation.preset)", for: .normal)
         
         
     }

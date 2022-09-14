@@ -68,7 +68,8 @@
                     </view>
                     <connections>
                         <outlet property="coreAnimationView" destination="xi5-lz-pDK" id="ndY-NH-mR7"/>
-                        <outlet property="descriptionAnimationLabel" destination="9M4-zF-Ugn" id="E8n-eg-iup"/>
+                        <outlet property="descripeAnimationLabel" destination="9M4-zF-Ugn" id="E8n-eg-iup"/>
+                        <outlet property="textButton" destination="v3Q-w9-2Ww" id="khq-Mp-JE4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

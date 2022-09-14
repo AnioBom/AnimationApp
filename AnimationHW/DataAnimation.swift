@@ -11,14 +11,9 @@ import SpringAnimation
 class DataAnimation {
     
     static let shared = DataAnimation()
-
-    let presets = [
-        "slideLeft", "slideUp", "fadeIn",
-        "zoomIn", "shake"
-    ]
     
-    let curves = [
-        "easeIn", "easeOut", "spring",
-        "easeOutSine", "easeOutCubic"
-    ]
+    let presets = "\(AnimationPreset.allCases)"
+    
+    let curves = "\(AnimationCurve.allCases)"
+
 }
