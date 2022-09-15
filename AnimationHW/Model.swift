@@ -12,9 +12,9 @@ struct Animation {
     
     let preset: String
     let curve: String
-    let force: Int
-    let duration: Int
-    let delay: Int
+    let force: Double
+    let duration: Double
+    let delay: Double
     
     var fullDescriptionAnimation: String {
         """
@@ -28,12 +28,37 @@ struct Animation {
 }
 
 extension Animation {
-    static func getAniamtionType() -> [Animation] {
+    static func getAniamtionType() {
         var typeAnimation: [Animation] = []
         
-        let dataA = DataAnimation.shared
+        let dataStore = DataStore.shared
         
-        for _ in 0..<dataA.presets.count {
+        let presets = dataStore.presets.shuffled()
+        let curves = dataStore.curves.shuffled()
+        let force = Double.random(in: 1...2)
+        let duration = Double.random(in: 0...1)
+        let delay = Double.random(in: 0...1)
+        
+        
+        let iterationCount = min(
+            presets.count,
+            curves.count,
+            force,
+            duration,
+            delay
+        )
+       
+        for _ in 0..<iterationCount {
+            let animation = Animation(preset:
+                                      presets.randomElement(),
+                                      curve: curves.randomElement(),
+                                      force: .random(in: 1...2),
+                                      duration: .random(in: 0...1),
+                                      delay: .random(in: 0...1))
+            typeAnimation.append(animation)
+        }
+       
+        /*for _ in 0..<dataStore.presets.count {
             typeAnimation.append(Animation(
                 preset: dataA.presets,
                 curve: dataA.curves,
@@ -42,8 +67,9 @@ extension Animation {
                 delay: Int.random(in: 0...1)
                 )
             )
-        }
+         
         
         return typeAnimation
+         */
     }
 }

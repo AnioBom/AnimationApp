@@ -14,7 +14,7 @@
 		0401E10F28D19F330087FDEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0401E10E28D19F330087FDEF /* Assets.xcassets */; };
 		0401E11228D19F330087FDEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0401E11028D19F330087FDEF /* LaunchScreen.storyboard */; };
 		0401E11B28D1A2AF0087FDEF /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 0401E11A28D1A2AF0087FDEF /* SpringAnimation */; };
-		0401E11E28D1A3580087FDEF /* DataAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401E11D28D1A3580087FDEF /* DataAnimation.swift */; };
+		0401E11E28D1A3580087FDEF /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401E11D28D1A3580087FDEF /* DataStore.swift */; };
 		0401E12028D1A7980087FDEF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401E11F28D1A7980087FDEF /* Model.swift */; };
 		0401E12228D22AB60087FDEF /* extention + button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401E12128D22AB60087FDEF /* extention + button.swift */; };
 /* End PBXBuildFile section */
@@ -28,7 +28,7 @@
 		0401E10E28D19F330087FDEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0401E11128D19F330087FDEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0401E11328D19F330087FDEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0401E11D28D1A3580087FDEF /* DataAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAnimation.swift; sourceTree = "<group>"; };
+		0401E11D28D1A3580087FDEF /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		0401E11F28D1A7980087FDEF /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		0401E12128D22AB60087FDEF /* extention + button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extention + button.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,7 +68,7 @@
 				0401E10928D19F320087FDEF /* ViewController.swift */,
 				0401E12128D22AB60087FDEF /* extention + button.swift */,
 				0401E11F28D1A7980087FDEF /* Model.swift */,
-				0401E11D28D1A3580087FDEF /* DataAnimation.swift */,
+				0401E11D28D1A3580087FDEF /* DataStore.swift */,
 				0401E10B28D19F320087FDEF /* Main.storyboard */,
 				0401E10E28D19F330087FDEF /* Assets.xcassets */,
 				0401E11028D19F330087FDEF /* LaunchScreen.storyboard */,
@@ -164,7 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0401E12028D1A7980087FDEF /* Model.swift in Sources */,
-				0401E11E28D1A3580087FDEF /* DataAnimation.swift in Sources */,
+				0401E11E28D1A3580087FDEF /* DataStore.swift in Sources */,
 				0401E12228D22AB60087FDEF /* extention + button.swift in Sources */,
 				0401E10A28D19F320087FDEF /* ViewController.swift in Sources */,
 				0401E10628D19F320087FDEF /* AppDelegate.swift in Sources */,
